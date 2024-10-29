@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  release:
+    if: "!contains(github.repository, 'package-seed')"
+    uses: paytweed/ci-cd/.github/workflows/release.yml@main
+    secrets:
+      PACKAGE_REGISTRY_TOKEN: ${{ secrets.PACKAGE_REGISTRY_TOKEN }}
