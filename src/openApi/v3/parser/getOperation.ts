@@ -92,7 +92,7 @@ export const getOperation = (
         isDefinition: false,
         isNullable: false,
         isReadOnly: false,
-        isRequired: true,
+        isRequired: false,
         link: null,
         mediaType: null,
         prop: '',
