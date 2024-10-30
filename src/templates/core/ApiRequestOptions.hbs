@@ -6,7 +6,7 @@ import { TweedBaseContext } from '@paytweed/context';
 export type ApiRequestOptions = {
 	readonly method: 'GET' | 'PUT' | 'POST' | 'DELETE' | 'OPTIONS' | 'HEAD' | 'PATCH';
 	readonly url: string;
-	readonly context?: TweedBaseContext
+	readonly context?: TweedBaseContext;
 	readonly path?: Record<string, any>;
 	readonly cookies?: Record<string, any>;
 	readonly headers?: Record<string, any>;
