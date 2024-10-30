@@ -70,6 +70,27 @@ export const getOperation = (
         });
     }
 
+    operation.parameters.push({
+        name: 'context',
+        type: 'TweedBaseContext',
+        in: 'param',
+        base: 'TweedBaseContext',
+        description: 'Tweed context for context propagation',
+        export: 'generic',
+        isDefinition: false,
+        isNullable: false,
+        isReadOnly: false,
+        isRequired: true,
+        link: null,
+        mediaType: null,
+        prop: '',
+        properties: [],
+        enum: [],
+        enums: [],
+        imports: [],
+        template: null,
+    });
+
     operation.parameters = operation.parameters.sort(sortByRequired);
 
     return operation;
