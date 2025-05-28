@@ -18,8 +18,8 @@ import type { {{{this}}} } from '../models/{{{this}}}';
 
 {{/if}}
 {{#notEquals @root.httpClient 'angular'}}
-import { AxiosResponse } from '@paytweed/http-client';
-import { TweedBaseContext } from '@paytweed/context';
+import { AxiosResponse } from '@corsa-labs/http-client';
+import { TweedBaseContext } from '@corsa-labs/context';
 {{/notEquals}}
 {{#if @root.exportClient}}
 {{#equals @root.httpClient 'angular'}}
